@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+    </header>
+    <main>
+        <form id="task-form">
+            <fieldset>
+                <legend>Add a Task:</legend>
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" required>
+                <label for="task-desc">Task Description:</label>
+                <textarea id="task-desc" required></textarea>
+                <label for="task-priority">Task Priority:</label>
+                <select id="task-priority" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <label for="task-due-date">Due Date:</label>
+                <input type="date" id="task-due-date" required>
+                <button type="submit">Add Task</button>
+            </fieldset>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Task Description</th>
+                    <th>Priority</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+            </tbody>
+        </table>
+        <div id="notification-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

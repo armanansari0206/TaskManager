@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form fieldset{
+    /* border: 1px solid red; */
+    padding: 5px 5px 5px 5px;
+    background-image: linear-gradient(to bottom right, #e7eff7, #4b6ac5, #4aaae6, rgb(255, 122, 89));
+    /* background-image: linear-gradient(45deg, #FFFFFF, rgb(255, 122, 89)); */
+}
+
+form label {
+    display: block;
+	margin-bottom: 5px;
+}
+
+form legend{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+form input,
+form textarea,
+form select {
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+form button {
+    background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border: transparent;
+	border-radius: 5px;
+}
+form button:hover {
+    background-color: #f12465;
+	color: #fff;
+	cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+	width: 100%;
+}
+
+table th,
+table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+table th {
+    background-color: #333;
+	color: #fff;
+}
+
+table td:nth-child(5) {
+	color: green;
+	font-weight: bold;
+}
+
+.completed {
+	color: rgb(20, 86, 242);
+	background-color: lightgreen;
+	font-weight: bold;
+}
+
+
+.completed-btn {
+	padding: 2px 2px 2px 2px;
+	border-radius: 5px;
+	border-color: transparent;	
+}
+.deleted-btn {
+	padding: 2px 2px 2px 2px;
+	border-radius: 5px;
+	border-color: transparent;
+}
+
+.completed-btn:hover {
+	background-color: gray;
+	cursor: pointer;
+	color: whitesmoke;
+}
+.deleted-btn:hover {
+	background-color: rgb(247, 73, 73);
+	cursor: pointer;
+	color: whitesmoke;
+}
